@@ -149,7 +149,7 @@
             </form>
     </div>
     <div class="footer-of-modal-window">
-    <h1>Види допомоги</h1>
+    <h1>Види допомоxги</h1>
     <div style="text-align: center; color:#363B5D; margin-bottom: 2em; ">  Ви можете змінити вид допомоги</div>
           <div class="type-of-help-modal-block" style="margin-bottom: 2em;">
             <div style="display: grid; align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em; grid-template-columns: 30% 70%">
@@ -203,12 +203,12 @@
               <div>
               <label for="time">Термін дії</label>
               <br>
-              <input type="text" id="time" style="margin-right: 7em; ">
+              <input type="date" id="time" style="margin-right: 7em; ">
               </div>    
               <div>
-              <label for="cvc">Термін дії</label>
+              <label for="cvc">CVC/CVV</label>
               <br>
-              <input type="text" id="cvc">
+              <input type="password" id="cvc" maxlength="3">
               </div>
             </form>
           </div>
@@ -228,7 +228,32 @@
       <a href="#"><img src="image/facebook.svg" alt=""></a>
       <a href="#"><img src="image/vk.svg" alt=""></a>
     </div>
-    <div class="messenge"><a href="#"><img src="image/messenge.svg" alt=""></a></div>
+    <div class="messenge"><a href="#modal-for-messenge"><img src="image/messenge.svg" alt=""></a></div>
+    <div class="modal-window-blur" id="modal-for-messenge">
+       <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close-to-messenge"></a> 
+      <div class=" block-for-massenge">
+     <h1>Надіслати листа</h1>
+        <form action="" class="massenge-form">
+          <div style="display: flex; margin-bottom: 4em;">
+          <label for="name-of-sender">Ім'я</label>
+          <input type="text" id="name-of-sender" style="margin-right: 10%;">
+          <label for="samename-of-sender">Прізвище</label>
+          <input type="text" id="samename-of-sender" style="margin-right:  10%;">
+          <label for="email-of-sender">Email</label>
+          <input type="email" id="email-of-sender" >
+        </div>
+           <label for="type-of-massenge">Тема повідомлення</label>
+          <input type="text" id="type-of-massenge">
+          <div style="margin-top:50px;">
+          <label for="messenge-text" style="display: block;">Введіть ваше повідомлення</label>
+          <br>
+          <textarea name="" id="messenge-text" cols="30" rows="10"></textarea>
+          </div>
+          <input type="submit" value="Відправити" id="submit-messenge">
+          <input type="submit" value="Відмінити"  id="cencel-massenge">
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 </html
