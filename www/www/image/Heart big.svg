@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="576.236" height="389.703" viewBox="0 0 576.236 389.703">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.262" y1="0.827" x2="1.835" y2="-0.647" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e53656"/>
+      <stop offset="1" stop-color="#6082d8"/>
+    </linearGradient>
+  </defs>
+  <g id="Сердце_изометрия" data-name="Сердце изометрия" transform="matrix(0.995, 0.105, -0.105, 0.995, 36.948, -41.798)">
+    <g id="Heart_" data-name="Heart\" transform="translate(126.793 90.08)">
+      <path id="Shape_Copy" data-name="Shape Copy" d="M90.9,66.452c-24.416-3.558-49.9,2.4-67.651,17.581C-8.225,112.385-7.677,159.5,24.495,187.978c39.367,32.233,106.225,23.706,207.517,11.4l24.452-2.872c2.239-.261,4.123-1.75,4.207-3.308l.926-17.083c3.786-70.319,6.3-116.342-33.067-148.575C196.358-.941,146.536-9.308,115.064,11.836,97.313,24.573,88.723,45.407,90.9,66.452Z" transform="translate(0.32 13.35)" fill="#b74256"/>
+      <path id="Shape" d="M90.9,66.452c-24.416-3.558-49.9,2.4-67.651,17.581C-8.225,112.385-7.677,159.5,24.495,187.978c39.367,32.233,106.225,23.706,207.517,11.4l24.452-2.872c2.239-.261,4.123-1.75,4.207-3.308l.926-17.083c3.786-70.319,6.3-116.342-33.067-148.575C196.358-.941,146.536-9.308,115.064,11.836,97.313,24.573,88.723,45.407,90.9,66.452Z" transform="translate(0.32 0.208)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Oval" transform="matrix(0.985, -0.174, 0.174, 0.985, 93.291, 342.61)">
+      <path id="Oval_3_Copy_3" data-name="Oval 3 Copy 3" d="M25.661,51.991c14.172,3.246,25.661-5.611,25.661-19.783S39.832,3.917,25.661.67,0,6.281,0,20.453,11.489,48.745,25.661,51.991Z" transform="matrix(0.883, -0.469, 0.469, 0.883, 0.523, 29.521)" fill="none" stroke="#b74256" stroke-miterlimit="10" stroke-width="10"/>
+      <path id="Oval_3_Copy_2" data-name="Oval 3 Copy 2" d="M25.661,51.991c14.172,3.246,25.661-5.611,25.661-19.783S39.832,3.917,25.661.67,0,6.281,0,20.453,11.489,48.745,25.661,51.991Z" transform="matrix(0.921, -0.391, 0.391, 0.921, 3.138, 20.116)" fill="none" stroke="#e73453" stroke-miterlimit="10" stroke-width="10"/>
+    </g>
+    <g id="Oval-2" data-name="Oval" transform="translate(32.19 234.076) rotate(-17)">
+      <path id="Oval_3_Copy" data-name="Oval 3 Copy" d="M21.132,42.816C32.8,45.49,42.264,38.2,42.264,26.525S32.8,3.225,21.132.552,0,5.173,0,16.844,9.461,40.143,21.132,42.816Z" transform="matrix(0.883, -0.469, 0.469, 0.883, 0.102, 25.404)" fill="#b74256"/>
+      <path id="Oval_3" data-name="Oval 3" d="M21.132,42.816C32.8,45.49,42.264,38.2,42.264,26.525S32.8,3.225,21.132.552,0,5.173,0,16.844,9.461,40.143,21.132,42.816Z" transform="matrix(0.921, -0.391, 0.391, 0.921, 3.576, 16.957)" fill="#e73453"/>
+    </g>
+    <g id="Oval_Copy_2" data-name="Oval Copy 2" transform="translate(410.809 106.035) rotate(-17)">
+      <path id="Oval_3_Copy-2" data-name="Oval 3 Copy" d="M21.132,42.816C32.8,45.49,42.264,38.2,42.264,26.525S32.8,3.225,21.132.552,0,5.173,0,16.844,9.461,40.143,21.132,42.816Z" transform="matrix(0.883, -0.469, 0.469, 0.883, 0.102, 25.404)" fill="#b74256"/>
+      <path id="Oval_3-2" data-name="Oval 3" d="M21.132,42.816C32.8,45.49,42.264,38.2,42.264,26.525S32.8,3.225,21.132.552,0,5.173,0,16.844,9.461,40.143,21.132,42.816Z" transform="matrix(0.921, -0.391, 0.391, 0.921, 3.576, 16.957)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(0 296.119)">
+      <rect id="Rectangle_3_Copy" data-name="Rectangle 3 Copy" width="86.541" height="42.264" rx="19" transform="matrix(0.819, -0.574, 0.574, 0.819, 0.016, 57.507)" fill="#b74256"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="86.541" height="42.264" rx="19" transform="matrix(0.819, -0.574, 0.574, 0.819, 1.072, 50.11)" fill="#e73453"/>
+    </g>
+    <g id="Group_3_Copy_2" data-name="Group 3 Copy 2" transform="translate(401.512 179.892)">
+      <rect id="Rectangle_3_Copy-2" data-name="Rectangle 3 Copy" width="86.541" height="42.264" rx="19" transform="matrix(0.819, -0.574, 0.574, 0.819, 0.016, 57.507)" fill="#b74256"/>
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" width="86.541" height="42.264" rx="19" transform="matrix(0.819, -0.574, 0.574, 0.819, 1.072, 50.11)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_3_Copy" data-name="Group 3 Copy" transform="translate(233.511 324.647)">
+      <rect id="Rectangle_3_Copy-3" data-name="Rectangle 3 Copy" width="89.56" height="24.151" rx="12.076" transform="matrix(0.819, -0.574, 0.574, 0.819, 0.277, 57.949)" fill="#b74256"/>
+      <rect id="Rectangle_3-3" data-name="Rectangle 3" width="89.56" height="24.151" rx="12.076" transform="matrix(0.819, -0.574, 0.574, 0.819, 1.334, 51.609)" fill="#e73453"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(450.116 2.113)">
+      <rect id="Rectangle_3_Copy_3" data-name="Rectangle 3 Copy 3" width="95.095" height="26.415" rx="13.208" transform="matrix(0.819, -0.574, 0.574, 0.819, 0.537, 61.965)" fill="#b74256"/>
+      <rect id="Rectangle_3_Copy_2" data-name="Rectangle 3 Copy 2" width="95.095" height="26.415" rx="13.208" transform="matrix(0.819, -0.574, 0.574, 0.819, 1.594, 54.568)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group" transform="translate(320.153 0)">
+      <rect id="Rectangle_3_Copy_5" data-name="Rectangle 3 Copy 5" width="95.095" height="26.415" rx="13.208" transform="matrix(0.819, -0.574, 0.574, 0.819, 0.537, 61.965)" fill="#b74256"/>
+      <rect id="Rectangle_3_Copy_4" data-name="Rectangle 3 Copy 4" width="95.095" height="26.415" rx="13.208" transform="matrix(0.819, -0.574, 0.574, 0.819, 1.594, 54.568)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
