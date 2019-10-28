@@ -436,6 +436,7 @@ color:#363B5D;
 	left: 0%;
 	top: 0%;
 	bottom: 0%;
+
 	backdrop-filter:blur(35px);
 }
 #second-window-of-search{
@@ -495,9 +496,11 @@ display: block;
 	border-radius: 13px;
 	margin-right: 12px;
 	cursor: pointer;
+	box-sizing: border-box;
 }
 .div-img:hover{
 background-color: #9C5D9A;
+border: none;
 }
 input{
 	outline: none;
@@ -570,7 +573,7 @@ color:#363B5D;
 	width: 130px;
 }
 .button-help-modal {
-
+	color: #fff;
 	margin-top: 3em;
 	margin-bottom:  8em;
 	margin-left: 46%; 
@@ -658,6 +661,7 @@ margin-top:  3%;
 	right: 0%;
 }
 .image-banks{
+	cursor: pointer;
 	width: 170px;
 	height: 85px;
 	background-color: #C5D5E6;
@@ -665,6 +669,12 @@ margin-top:  3%;
 	display: grid;
 	justify-content: center;
 	grid-template-rows: 1fr 1fr;
-	font-size: 0.6em;
+	font-size: 0.8em;
 	border-radius: 10px;
+}
+.image-banks:hover{
+	background-color: #9C5D9A;
+}
+.active-card{
+	background-color: #9C5D9A;
 }
