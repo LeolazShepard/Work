@@ -140,8 +140,9 @@
   	</div>
   	</div>
   </div>
+
    <footer>
-    <div class="messenge"><a href="#"><img src="image/messenge.svg" alt=""></a></div>
+    <div class="messenge"><a href="#modal-for-messenge"><img src="image/messenge.svg" alt=""></a></div>
     <style>.messenge{
     	
     	bottom: 1em;
@@ -149,6 +150,33 @@
     	position: fixed;
     }
 	</style>
+    <div class="modal-window-blur" id="modal-for-messenge">
+       <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close-to-messenge"></a> 
+      <div class="block-for-massenge">
+     <h1>Надіслати листа</h1>
+        <form action="" class="massenge-form">
+          <div style="display: flex; margin-bottom: 4em;">
+          <label for="name-of-sender">Ім'я</label>
+          <input type="text" id="name-of-sender" style="margin-right: 10%;">
+          <label for="samename-of-sender">Прізвище</label>
+          <input type="text" id="samename-of-sender" style="margin-right:  10%;">
+          <label for="email-of-sender">Email</label>
+          <input type="email" id="email-of-sender" >
+        </div>
+           <label for="type-of-massenge">Тема повідомлення</label>
+          <input type="text" id="type-of-massenge">
+          <div style="margin-top:50px;">
+          <label for="messenge-text" style="display: block;">Введіть ваше повідомлення</label>
+          <br>
+          <textarea name="" id="messenge-text" cols="30" rows="10"></textarea>
+          </div>
+<div style="margin-left: 29%;">
+          <input type="submit" value="Відправити" id="submit-messenge">
+          <input type="submit" value="Відмінити"  id="cencel-massenge">
+</div>
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

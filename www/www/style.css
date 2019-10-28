@@ -437,8 +437,27 @@ color:#363B5D;
 	top: 0%;
 	bottom: 0%;
 	backdrop-filter:blur(35px);
-
-
+}
+#second-window-of-search{
+	display: none;
+	backdrop-filter:blur(35px);
+	color: #fff;
+	padding:20px;
+	position: absolute;
+	left: 5%;
+	top: 5%;
+}
+#second-window-of-search:target{
+	display: grid;
+	grid-template-rows: 30% 70%;
+}
+.first-row{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.second-row{
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 .modal-window-blur:target{
 display: block;
@@ -475,7 +494,10 @@ display: block;
 	border: 2px solid #C5D5E6;
 	border-radius: 13px;
 	margin-right: 12px;
-
+	cursor: pointer;
+}
+.div-img:hover{
+background-color: #9C5D9A;
 }
 input{
 	outline: none;
@@ -560,10 +582,9 @@ color:#363B5D;
 	background: linear-gradient(to left, #6082D7, #E73453 );
 }
 .block-for-massenge{
-	position: absolute;
-	top:5%;
-	left: 5%;
-	right: 5%;
+		 box-shadow: 0 3px 7px rgba(0,0,0,.25);
+	margin-left: 5%;
+	margin-top:  5%;
 	width: 80%;
 	min-height: 600px;
 	background-color: #fff;
@@ -575,6 +596,7 @@ color:#363B5D;
 	color: #363B5D;
 	text-align: center;
 	font-size: 3em;
+	margin-left: -10%;
 }
 .massenge-form{
 color:#939AA3;
@@ -616,8 +638,9 @@ font-size: 1.5em;
 	width: 160px;
 	height: 40px;
 background: linear-gradient(to left, #6082D7, #E73453 );
-margin-right: 10%;
+
 cursor: pointer;
+margin-top:  3%;
 }
 #cencel-massenge{
 	color: #fff;
@@ -627,9 +650,21 @@ cursor: pointer;
 background: linear-gradient(to left,#939AA3, #363B5D );
 margin-right: 20%;
 cursor: pointer;
+margin-top:  3%;
 }
 .cross-for-close-to-messenge{
 	position: absolute;
 	top:0%;
 	right: 0%;
+}
+.image-banks{
+	width: 170px;
+	height: 85px;
+	background-color: #C5D5E6;
+	color: #fff;
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 1fr 1fr;
+	font-size: 0.6em;
+	border-radius: 10px;
 }

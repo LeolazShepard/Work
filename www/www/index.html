@@ -39,10 +39,31 @@
       <a href="#" class="no-active">Вхід</a> / <a href="#" class="no-active">Реєстрація</a>
       <div class="search-block" id="search-block"> 
         <form action="" id="search-form">
-        <input type="text" id="search-input" placeholder="Пошук">
+        <input type="text" id="search-input" placeholder="Пошук" onkeypress="#second-window-of-search">
       </form>
    <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close"></a> 
       </div>
+        <div id="second-window-of-search">
+              <div class="first-row">
+                        <div>
+                      sadadadadad
+                        </div>
+
+                        <div>
+                          
+                        </div>
+              </div>
+
+              <div class="second-row">
+                <div>
+                          
+                        </div>
+                        
+                        <div>
+                          
+                        </div>
+              </div>
+        </div>
     </div>
   </header>
  <div class="main-content">
@@ -161,7 +182,7 @@
                 </div>
             </div>
             <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
-              <div class="div-img" style="background-color: #9C5D9A;">
+              <div class="div-img" style="">
                   <img src="image/image-for-modal/pigs2.svg" alt="">
                 </div>
                 Фінансова <br>допомога
@@ -181,8 +202,29 @@
         </div>
         <div class="pay">
           <div class="type-of-pay">
-              <div><img src="image/image-for-pay/visa.svg" alt=""></div>
-              <div><img src="image/image-for-pay/privat.svg" alt=""></div>
+              <div class="image-banks">
+                <div style="padding-top: 15px; " >
+                  <img src="image/Banks/mastercard.svg" alt="" style="margin-left: 13px;">
+                  <img src="image/Banks/visa.svg" alt="">
+                </div>
+                <div style="padding-top: 20px;">
+                  Карта Visa/MasterCard
+                </div>
+              </div>
+              <div class="image-banks">
+                 <div style="padding-top: 15px; " >
+                   <center>  
+        
+                  <img src="image/Banks/privat.svg" alt="" >
+                </center>
+                  
+                </div>
+                <div style="padding-top: 20px;">
+                  <center>  
+                  Приват24
+                </center>
+                </div>
+              </div>
               <div><img src="image/image-for-pay/terminal.svg" alt=""></div>
               <div><img src="image/image-for-pay/paypal.svg" alt=""></div>
               <div><img src="image/image-for-pay/webmoney.svg" alt=""></div>
@@ -231,7 +273,7 @@
     <div class="messenge"><a href="#modal-for-messenge"><img src="image/messenge.svg" alt=""></a></div>
     <div class="modal-window-blur" id="modal-for-messenge">
        <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close-to-messenge"></a> 
-      <div class=" block-for-massenge">
+      <div class="block-for-massenge">
      <h1>Надіслати листа</h1>
         <form action="" class="massenge-form">
           <div style="display: flex; margin-bottom: 4em;">
@@ -249,8 +291,10 @@
           <br>
           <textarea name="" id="messenge-text" cols="30" rows="10"></textarea>
           </div>
+<div style="margin-left: 29%;">
           <input type="submit" value="Відправити" id="submit-messenge">
           <input type="submit" value="Відмінити"  id="cencel-massenge">
+</div>
         </form>
       </div>
     </div>
