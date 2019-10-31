@@ -1,123 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="style.css">
-  <link href="image/Hear.png" rel="shortcut icon" type="image/x-icon">
-	<title>Добре серце</title>
-
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <style>
-                #Urgent-assistance-button{
-        background: linear-gradient(to left, #6082D7, #E73453 );
-        border-radius: 7px;
-        padding: 5px;
-        }
-    </style>
-  <header>
-    <div id="Logo-leng">
-     <a href="index.html"><img src="image/logo.svg" alt="Logo" id="Logo"></a>
-     <ul id="menu">
-       <li><a href="#">УКР</a></li>
-       <li><a href="#" class="no-active">РУС</a></li>
-       <li><a href="#" class="no-active">EN</a></li>
-     </ul>
-    </div>
-    <div id="nav-bar">
-        <ul id="nav">
-         <li><a href="projects.html" >Проекти</a></li>
-         <li><a href="Archives.html">Архіви</a></li>
-         <li><a href="feed-back.html">Контакти</a></li>
-        </ul>
-        <div id="Urgent-assistance-button">
-         <a href="urgent-assistance.html"> Термінова допомога </a>
-        </div>
-    </div>
-    <div id="search-login">
-      <a href="#search-block"><img src="image/Shape.svg" alt="Search" id="search"></a>
-      <a href="#" class="no-active">Вхід</a> / <a href="#" class="no-active">Реєстрація</a>
-      <div class="search-block" id="search-block"> 
-        <form action="" id="search-form">
-        <input type="text" id="search-input" placeholder="Пошук" onkeypress="#second-window-of-search">
-      </form>
-   <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close"></a> 
-      </div>
-    </div>
-  </header>
- <div class="main-content">
+  <style>
+    .tabs-links li{
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid black;
+      list-style: none;
+      cursor: pointer;}
 
-    <div id="Good-heart">
-      <div id="good-heart-big-text">Добре Серце </div>
-      <div id="good-heart-mini-text"> детальніше про проект <div class="arrow"> <a href="#"><img src="image/arrow.svg" alt=""></a></div></div>
-    </div>
-    <br>
-    <br>
-      <hr align="left" class="line">
-      <div class="text-gilroy">
-        Вже зараз Ви можете допомогти тим, хто дійсно <br>  потребує допомоги
-      </div>
-      <br> 
-      <br>
-      <div class="help-right-now">
-        <div id="text-help-right-now"><span class="text"> Як Ви можете допомогти?</span> <a href="#modal-window-blur"><img src="image/arrow.svg" alt="" class="arrow"></a></div>
-        <div id="button-help"><a href="#modal-form-blur-tabs">Допомогти вже зараз</a></div>
-      </div>
-      <br>
-      <br>
-      <hr align="left" class="line">
-      <span class="text-gilroy">Якщо Вам необхідна допомога, додайте проект</span>
-      <div id="add-project">
-       Додати проект <a href="#"><img src="image/pluss.svg" alt=""></a>
-      </div>
+      .tabs-content{
+        position: relative;
+      }
+      .tabs-content li{
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        list-style-type: none;
+      }
+      .tabs-content li:first-child{
+        opacity: 1;
+      }
 
-      <div id="Big-Heart">
-        <img src="image/Heart big.svg" alt="">
-      </div>
-      
-      <div class="modal-window-blur" id="modal-window-blur">
-        <div class="modal-window" id="modal-window">
-          <h1>Види допомоги</h1>
-          <div class="type-of-help-modal-block">
-            <div style="display: grid; align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em; grid-template-columns: 30% 70%">
-                <div class="div-img">
-                  <img src="image/image-for-modal/pigs1.svg" alt="">
-                </div>
-
-                <div class="text-of-column">
-                Зробити 
-                </div>
-            </div>
-            <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
-              <div class="div-img">
-                  <img src="image/image-for-modal/pigs2.svg" alt="">
-                </div>
-                Фінансова <br>допомога
-            </div>
-            <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
-              <div class="div-img">
-                  <img src="image/image-for-modal/pigs3.svg" alt="">
-                </div>
-              Матеріальна <br>допомога
-            </div>
-            <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
-              <div class="div-img">
-                  <img src="image/image-for-modal/pigs4.svg" alt="">
-                </div>
-              Волонтерство
-            </div>
-          </div>
-        </div>
-        <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close2"></a> 
-      </div>
-      <div class="modal-window-blur" id="modal-form-blur-tabs">
-      <div class="modal-form" id="modal-form">
-    <h1>Заповніть форму</h1>
-    <ul class="tabs">
-      <li class="tab1 tabs-links">Фіз. особа</li>
-      <li class="tab2 tabs-links">Юр. особа</li>
-    </ul>
-    <div>
+  </style>
+  <div class="modal-form" id="modal-form">
+  <ul class="tabs-links">
+        <li>
+          <span>tab1</span>
+        </li>
+        <li>
+            <span>tab2</span>
+        </li>
+  </ul>
+  <ul class="tabs-content">
+        <li>
+         <div>
     <div class="div-for-forms-register" >
             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
               <div id="individual">
@@ -293,44 +215,226 @@
         </div>
     </div>
   </div>
+        </li>
+        <li>
+            <div>
+    <div class="div-for-forms-register" >
+            <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div id="individual">
+                <label for="name-individual" style="display: block;" >Ім'я</label>
+                <input type="text" id="name-individual">
+              </div>
+              <div>
+                <label for="secondname-individual">Прізвище </label>
+                <input type="text" id="secondname-individual">
+              </div>
+               <div style="margin-left: 280px;">
+                <label for="country">Країна </label>
+                <input type="text" id="country">
+              </div>
+            </form>
+             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div>
+                <label for="name-of-company" style="display: block;" >Назва компаніі, організації</label>
+                <input type="text" id="name-of-company">
+              </div>
+               <div style="margin-left: 280px;">
+                <label for="city">Місто </label>
+                <input type="text" id="city">
+              </div>
+              <div >
+                <label for="state">Штат, район</label>
+                <input type="text" id="state">
+              </div>
+            </form>
+            <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div>
+                <label for="email-person" style="display: block;" >Email-адрес </label>
+                <input type="text" id="email-person">
+              </div>
+                <div style="margin-left: 280px;">
+                <label for="addres">Адреса </label>
+                <input type="text" id="addres">
+              </div>
+            </form>
+             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div>
+                <label for="number-of-telefon" style="display: block;" >Номер телефону </label>
+                <input type="text" id="number-of-telefon">
+              </div>
+                <div >
+                <label for="posst-index">Поштовий індекс</label>
+                <input type="text" id="posst-index">
+              </div>
+            </form>
+            <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div>
+                <label for="number-of-telefon" style="display: block;" >Номер телефону </label>
+                <input type="text" id="number-of-telefon">
+              </div>
+                <div >
+                <label for="posst-index">Поштовий індекс</label>
+                <input type="text" id="posst-index">
+              </div>
+            </form>
+            <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div>
+                <label for="number-of-telefon" style="display: block;" >Номер телефону </label>
+                <input type="text" id="number-of-telefon">
+              </div>
+                <div >
+                <label for="posst-index">Поштовий індекс</label>
+                <input type="text" id="posst-index">
+              </div>
+            </form>
+    </div>
+    <div class="footer-of-modal-window">
+    <h1>Види допомоxги</h1>
+    <div style="text-align: center; color:#363B5D; margin-bottom: 2em; ">  Ви можете змінити вид допомоги</div>
+          <div class="type-of-help-modal-block" style="margin-bottom: 2em;">
+            <div style="display: grid; align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em; grid-template-columns: 30% 70%">
+                <div class="div-img">
+                  <img src="image/image-for-modal/pigs1.svg" alt="">
+                </div>
+                <div class="text-of-column">
+                Зробити 
+                </div>
+            </div>
+            <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
+              <div class="div-img" style="">
+                  <img src="image/image-for-modal/pigs2.svg" alt="">
+                </div>
+                Фінансова <br>допомога
+            </div>
+            <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
+              <div class="div-img">
+                  <img src="image/image-for-modal/pigs3.svg" alt="">
+                </div>
+              Матеріальна <br>допомога
+            </div>
+            <div style="display: flex;align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em;">
+              <div class="div-img">
+                  <img src="image/image-for-modal/pigs4.svg" alt="">
+                </div>
+              Волонтерство
+            </div>
+        </div>
+        <div class="pay">
+          <div class="type-of-pay">
+              <div class="image-banks">
+                <div style="padding-top: 15px; " >
+                  <center>
+                  <img src="image/Banks/mastercard.svg" alt="" >
+                  <img src="image/Banks/visa.svg" alt="">
+                </center>
+                </div>
+                <div style="padding-top: 20px;">
+                  Карта Visa/MasterCard
+                </div>
+              </div>
+              <div class="image-banks active-card " >
+                 <div style="padding-top: 15px; " >
+                   <center>  
+                  <img src="image/Banks/privat.svg" alt="" >
+                </center>
+                </div>
+                <div style="padding-top: 20px;" >
+                  <center>  
+                  Приват24
+                </center>
+                </div>
+              </div>
+             <div class="image-banks  " >
+                 <div style="padding-top: 15px; " >
+                   <center>  
+                  <img src="image/Banks/terminals.svg" alt="" >
+                </center>
+                </div>
+                <div style="padding-top: 7px;" >
+                  <center>  
+                 Термінали України
+                </center>
+                </div>
+              </div>
+                <div class="image-banks  " >
+                 <div style="padding-top: 15px; " >
+                   <center>  
+                  <img src="image/Banks/WebMoney.svg" alt="" >
+                </center>
+                </div>
+                <div style="padding-top: 16px;" >
+                  <center>  
+              WebMoney
+                </center>
+                </div>
+              </div>
+               <div class="image-banks  " >
+                 <div style="padding-top: 15px; " >
+                   <center>  
+                  <img src="image/Banks/paypal.svg" alt="" >
+                </center>
+                </div>
+                <div style="padding-top: 12px;" >
+                  <center>  
+              PayPal
+                </center>
+                </div>
+              </div>
+          </div>
+          <div class="card">
+            <div>
+            <form action="" id="card">
+              <label for="number-of-card">Номер карти</label>
+              <br>
+              <input type="text"maxlength="4" name="number-of-card" id="number-of-card">
+              <input type="text"maxlength="4">
+              <input type="text"maxlength="4">
+              <input type="text"maxlength="4">
+            </form>
+            </div>
+            <div >
+            <form action="" id="cvc-date" style="display: grid; grid-template-columns: 50% 50%; margin-top: 10%;  justify-content: space-around;"  >
+              <div>
+              <label for="time">Термін дії</label>
+              <br>
+              <input type="date" id="time" style="margin-right: 7em; ">
+              </div>    
+              <div>
+              <label for="cvc">CVC/CVV</label>
+              <br>
+              <input type="password" id="cvc" maxlength="3">
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+        <div class="button-help-modal">
+     <a href="#"> Допомогти</a>
+        </div>
     </div>
   </div>
- </div>
-  <footer>
-    <div id="first-part-of-footer">
-    <div>Розповісти всім:</div>
-      <a href="#"><img src="image/Twit.svg" alt=""></a>
-      <a href="#"><img src="image/facebook.svg" alt=""></a>
-      <a href="#"><img src="image/vk.svg" alt=""></a>
-    </div>
-    <div class="messenge"><a href="#modal-for-messenge"><img src="image/messenge.svg" alt=""></a></div>
-    <div class="modal-window-blur" id="modal-for-messenge">
-       <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close-to-messenge"></a> 
-      <div class="block-for-massenge">
-     <h1>Надіслати листа</h1>
-        <form action="" class="massenge-form">
-          <div style="display: flex; margin-bottom: 4em;">
-          <label for="name-of-sender">Ім'я</label>
-          <input type="text" id="name-of-sender" style="margin-right: 10%;">
-          <label for="samename-of-sender">Прізвище</label>
-          <input type="text" id="samename-of-sender" style="margin-right:  10%;">
-          <label for="email-of-sender">Email</label>
-          <input type="email" id="email-of-sender" >
-        </div>
-           <label for="type-of-massenge">Тема повідомлення</label>
-          <input type="text" id="type-of-massenge">
-          <div style="margin-top:50px;">
-          <label for="messenge-text" style="display: block;">Введіть ваше повідомлення</label>
-          <br>
-          <textarea name="" id="messenge-text" cols="30" rows="10"></textarea>
-          </div>
-<div style="margin-left: 29%;">
-          <input type="submit" value="Відправити" id="submit-messenge">
-          <input type="submit" value="Відмінити"  id="cencel-massenge">
+        </li>
+  </ul>
 </div>
-        </form>
-      </div>
-    </div>
-  </footer>
+<script>
+  var Links=document.querySelectorAll('.tabs-links li');
+  var Content=document.querySelectorAll('.tabs-content li');
+  for(var i=0; 0<Links.length; i++){
+    (function (i){
+      var link=Links[i];
+      link.onclick=function(){
+        for(var j=0; j<Content.length; j++){
+          var opacity=window.getComputedStyle (Content[j]).opacity;
+          if (opacity=="1") {
+            Content[j].style.opacity="0";
+          }
+        }
+        Content[i].style.opacity='1';
+      }
+    }) (i);
+  }
+  
+
+</script> 
 </body>
-</html
+</html>
