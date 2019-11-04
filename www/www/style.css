@@ -397,17 +397,25 @@ color: #363B5D;
 text-align: center;
 font-size: 3em;
 }
+.tab-content{
+	display: none;
+}
+.tab-content.active{
+	display: block;
+	background-color: #fff;
+}
 
 .tabs{
+	color:#363B5D;
 	display: flex;
 	justify-content: center;
-	margin-left: 35%;
+	margin-left: 40%;
 	width: 280px;
 	border-radius: 7px;
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
-.tab1{
+.tab1234{
 	cursor: pointer;
 	list-style-type: none;
 		border-radius: 5px 0px 0px 5px;
@@ -416,23 +424,29 @@ font-size: 3em;
 	background-color: #363B5D;	
 	color: #fff;
 }
+.active{
+	background-color: #363B5D;	
+	color: #fff;
+}
 .tab1 a{
 	color: #fff;
 }
-
-.tab2 a{
+.tab1{
+		border-radius: 5px 0px 0px 5px;
+}
+.tab2{
+			border-radius: 0px 7px 7px 0px; }
+.tab a{
 color:#363B5D;
 }
 
-.tab2{
+.tab{
 	border: 1px solid #363B5D;
 	list-style-type: none;
 	cursor: pointer;
-		border-radius: 0px 7px 7px 0px; 
 	text-align: center;
 	padding: 5px;
-	background-color: #fff;	
-	color:#363B5D;
+	
 }
 
 .modal-window-blur{
