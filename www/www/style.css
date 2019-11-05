@@ -318,7 +318,10 @@ grid-template-columns: 30% 70%;
 	font-size: 1em;
 	flex-direction: column;
 	align-items: center;
-
+}
+.active-image{
+	background-color: #9C5D9A;
+	
 }
 #block-for-forms{
 	margin-top: 1em;
@@ -352,6 +355,7 @@ border: none;
 	width: 96%;
 }
 #searchResultsWrap{
+transition: all.6s ease;
 display: none;
 position: absolute;
 top: 12%;
@@ -525,10 +529,7 @@ display: block;
 	cursor: pointer;
 	box-sizing: border-box;
 }
-.div-img:hover{
-background-color: #9C5D9A;
-border: none;
-}
+
 input{
 	outline: none;
 	font-family: Geometria, sans-serif;
@@ -570,7 +571,7 @@ background-color: #DFE8F1;
 width: 395px;	
 }
 #Current-account{
-
+margin-right: 236px;	
 }
 #email-person{
 		width: 395px;
@@ -727,9 +728,7 @@ margin-top:  3%;
 	font-size: 0.8em;
 	border-radius: 10px;
 }
-.image-banks:hover{
-	background-color: #9C5D9A;
-}
+
 .active-card{
 	background-color: #9C5D9A;
 }

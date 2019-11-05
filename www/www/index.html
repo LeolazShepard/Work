@@ -304,6 +304,13 @@ function closet(){
                 <label for="Phone-bookkeeping">Телефон бухгалтерії</label>
                 <input type="text" id="Phone-bookkeeping">
               </div>
+              <script>
+  $(function() {
+  //задание заполнителя с помощью параметра placeholder
+  $("#Phone-bookkeeping").mask("+380(999) 999-99-99");
+  //задание заполнителя с помощью параметра placeholder
+});
+</script>
               <div >
                 <label for="Fax">Факс</label>
                 <input type="text" id="Fax">
@@ -313,12 +320,23 @@ function closet(){
 
 
     </div>
+      <script>
+          $(document).ready(
+  function (){
+$( ".footer-of-modal-window" ).on("click", ".div-img", function(){
+//удаляєм класи актів
+$(".footer-of-modal-window").find(".active-image").removeClass("active-image"); 
+//add class active
+$(this).addClass("active-image");
+});
+});
+        </script>
     <div class="footer-of-modal-window">
     <h1>Види допомоги</h1>
     <div style="text-align: center; color:#363B5D; margin-bottom: 2em; ">  Ви можете змінити вид допомоги</div>
           <div class="type-of-help-modal-block" style="margin-bottom: 2em;">
             <div style="display: grid; align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em; grid-template-columns: 30% 70%">
-                <div class="div-img">
+                <div class="div-img active-image">
                   <img src="image/image-for-modal/pigs1.svg" alt="">
                 </div>
                 <div class="text-of-column">
@@ -344,6 +362,17 @@ function closet(){
               Волонтерство
             </div>
         </div>
+        <script>
+          $(document).ready(
+  function (){
+$( ".pay" ).on("click", ".image-banks", function(){
+//удаляєм класи актів
+$(".pay").find(".active-card").removeClass("active-card"); 
+//add class active
+$(this).addClass("active-card");
+});
+});
+        </script>
         <div class="pay">
           <div class="type-of-pay">
               <div class="image-banks">
@@ -442,7 +471,7 @@ $(function() {
               <script>
 $(function() {
   //задание заполнителя с помощью параметра placeholder
-  $("#time").mask("99/99", {placeholder: "Mo/Year" });
+  $("#time").mask("99/99");
   //задание заполнителя с помощью параметра placeholder
 
 });

@@ -6,6 +6,9 @@
   	<link href="image/Hear.png" rel="shortcut icon" type="image/x-icon">
 	<title>Добре серце</title>
 	<link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <script src="jquery.maskedinput.min.js"></script>
+      <script src="jquery.maskedinput.js"></script> 
 </head>
 <body>
 	<style>
@@ -119,6 +122,13 @@ function closet(){
   		right: 20px;
   	}
   </style>
+  <script>
+  $(function() {
+  //задание заполнителя с помощью параметра placeholder
+  $("#phone").mask("+380(999) 999-99-99");
+  //задание заполнителя с помощью параметра placeholder
+});
+</script>
   <footer>
   	<a href="#"><img src="image/Twit.svg" alt=""></a>
   	<a href="#"><img src="image/facebook.svg" alt=""></a>
