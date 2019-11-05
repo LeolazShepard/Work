@@ -45,10 +45,49 @@
       <a href="#" class="no-active">Вхід</a> / <a href="#" class="no-active">Реєстрація</a>
       <div class="search-block" id="search-block"> 
         <form action="" id="search-form">
-        <input type="text" id="search-input" placeholder="Пошук">
+        <input type="text" id="search-input" placeholder="Пошук" onkeypress="addForm()"  >
       </form>
-   <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close"></a> 
+   <span onclick="closet()"> <a href="#"  > <img src="image/cross.svg" alt="" class="cross-for-close"></a> </span>
       </div>
+    </div>
+    <script>
+    function addForm() {
+    document.getElementById("searchResultsWrap").style.display = "grid";
+}
+function closet(){
+       let close = document.getElementById("searchResultsWrap");
+                    close.style.display = "none";
+}
+</script>
+
+    <div id="searchResultsWrap">
+<div style="display: grid; grid-template-columns: 20% 60%;">
+  <div style="padding-top: 10%; padding-left: 10%; font-size: 2em;" >Проекти</div>
+  
+<div style="border-bottom: 2px solid #B2BDCF; padding-bottom: 20px; display: grid; grid-template-columns: 50% 50%">
+  <div style="padding-top: 6%;"><span style="font-size: 1.3em;">Діти</span><br><br>
+    Для операції на сердце маленькому <br>хлопчику, необхідно зібрати гроші на ліки<br>
+
+    <br>
+   
+    <hr align="left" style="border: 1px solid #B2BDCF; width: 300px; ">
+
+  Збираємо гроші на лікування п’ятирічного<br> Василя, який став жертвою ДТП 
+</div>
+<div style="display: block; padding-top: 7%; margin-left: 30%;"><span style="font-size: 1.3em;">Війна</span> <br> <br>
+Необхідно зібрати ліки для поранених бійців із зони АТО 
+</div>
+</div>
+</div>
+<div style="margin-top: 30px;">
+<div style="display: grid; grid-template-columns: 20% 40%;">
+  <div style="padding-top: 10%; padding-left: 10%; font-size: 2em;" >Архіви</div>
+  <div style="padding-top: 6%;"><span style="font-size: 1.3em;">Діти</span><br><br>
+    Необхідно купити ліки для дитячого будинку<br> в місті Київ
+</div>
+</div>      
+</div>
+    </div>
     </div>
   </header>
   <div class="number-and-email">

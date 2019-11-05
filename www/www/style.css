@@ -351,9 +351,18 @@ border: none;
 	left: 1%;
 	width: 96%;
 }
-#search-form{
-
+#searchResultsWrap{
+display: none;
+position: absolute;
+top: 12%;
+left: 1%;
+width: 98%;
+backdrop-filter:blur(6px);
+background-color: rgba(197, 213, 230,0.5);
+grid-template-rows: 50% 50%;
+min-height: 300px;
 }
+
 
 #search-form input{
 	text-align: center;
@@ -415,14 +424,10 @@ font-size: 3em;
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
-.tab1234{
-	cursor: pointer;
-	list-style-type: none;
-		border-radius: 5px 0px 0px 5px;
-	text-align: center;
-	padding: 5px;
-	background-color: #363B5D;	
-	color: #fff;
+.cross-for-close-to-modal-form{
+	position: absolute;
+	top: 0%;
+	right: 0%;
 }
 .active{
 	background-color: #363B5D;	
@@ -560,6 +565,12 @@ background-color: #DFE8F1;
 }
 #name-of-company{
 	width: 395px;
+}
+#Legal-address{
+width: 395px;	
+}
+#Current-account{
+
 }
 #email-person{
 		width: 395px;

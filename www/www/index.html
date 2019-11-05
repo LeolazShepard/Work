@@ -6,6 +6,9 @@
   <link href="image/Hear.png" rel="shortcut icon" type="image/x-icon">
    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
    <script src="Script.js"></script>
+   <script src="jquery.maskedinput.min.js"></script>
+      <script src="jquery.maskedinput.js"></script>
+
 	<title>Добре серце</title>
 
 </head>
@@ -41,10 +44,48 @@
       <a href="#" class="no-active">Вхід</a> / <a href="#" class="no-active">Реєстрація</a>
       <div class="search-block" id="search-block"> 
         <form action="" id="search-form">
-        <input type="text" id="search-input" placeholder="Пошук" onkeypress="#second-window-of-search">
+        <input type="text" id="search-input" placeholder="Пошук" onkeypress="addForm()"  >
       </form>
-   <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close"></a> 
+   <span onclick="closet()"> <a href="#"  > <img src="image/cross.svg" alt="" class="cross-for-close"></a> </span>
       </div>
+    </div>
+    <script>
+    function addForm() {
+    document.getElementById("searchResultsWrap").style.display = "grid";
+}
+function closet(){
+       let close = document.getElementById("searchResultsWrap");
+                    close.style.display = "none";
+}
+</script>
+
+    <div id="searchResultsWrap">
+<div style="display: grid; grid-template-columns: 20% 60%;">
+  <div style="padding-top: 10%; padding-left: 10%; font-size: 2em;" >Проекти</div>
+  
+<div style="border-bottom: 2px solid #B2BDCF; padding-bottom: 20px; display: grid; grid-template-columns: 50% 50%">
+  <div style="padding-top: 6%;"><span style="font-size: 1.3em;">Діти</span><br><br>
+    Для операції на сердце маленькому <br>хлопчику, необхідно зібрати гроші на ліки<br>
+
+    <br>
+   
+    <hr align="left" style="border: 1px solid #B2BDCF; width: 300px; ">
+
+  Збираємо гроші на лікування п’ятирічного<br> Василя, який став жертвою ДТП 
+</div>
+<div style="display: block; padding-top: 7%; margin-left: 30%;"><span style="font-size: 1.3em;">Війна</span> <br> <br>
+Необхідно зібрати ліки для поранених бійців із зони АТО 
+</div>
+</div>
+</div>
+<div style="margin-top: 30px;">
+<div style="display: grid; grid-template-columns: 20% 40%;">
+  <div style="padding-top: 10%; padding-left: 10%; font-size: 2em;" >Архіви</div>
+  <div style="padding-top: 6%;"><span style="font-size: 1.3em;">Діти</span><br><br>
+    Необхідно купити ліки для дитячого будинку<br> в місті Київ
+</div>
+</div>      
+</div>
     </div>
   </header>
  <div class="main-content">
@@ -79,13 +120,13 @@
       
       <div class="modal-window-blur" id="modal-window-blur">
         <div class="modal-window" id="modal-window">
+
           <h1>Види допомоги</h1>
           <div class="type-of-help-modal-block">
             <div style="display: grid; align-items: center; color:#363B5D; font-family:Geometria ExtraBold, sans-serif; font-size: 1.3em; grid-template-columns: 30% 70%">
                 <div class="div-img">
                   <img src="image/image-for-modal/pigs1.svg" alt="">
                 </div>
-
                 <div class="text-of-column">
                 Зробити 
                 </div>
@@ -116,7 +157,7 @@
       <div class="modal-form" id="modal-form">
     <h1>Заповніть форму</h1>
     <div class="tabs">
-      <label class="tab tab1  tab-active">Фіз. особа</label>
+      <label class="tab tab1  active">Фіз. особа</label>
       <label class="tab tab2 ">Юр. особа</label>
     </div>
     <div>
@@ -172,7 +213,7 @@
             </form>
         </div>
 
-
+          <a href="#"> <img src="image/cross.svg" alt="" class="cross-for-close-to-modal-form"></a> 
    <div class="tab-content">
             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
               <div id="individual">
@@ -218,28 +259,54 @@
                 <input type="text" id="number-of-telefon">
               </div>
                 <div >
-                <label for="posst-index">Поштовий індекс</label>
+                <label for="posst-index" name="posst-index">Поштовий індекс</label>
                 <input type="text" id="posst-index">
               </div>
             </form>
-            <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
               <div>
-                <label for="number-of-telefon" style="display: block;" >Номер телефону </label>
-                <input type="text" id="number-of-telefon">
+                <label for="Legal-address" style="display: block;" >Юридична адреса</label>
+                <input type="text" id="Legal-address">
               </div>
-                <div >
-                <label for="posst-index">Поштовий індекс</label>
-                <input type="text" id="posst-index">
+               <div style="margin-left: 280px;">
+                <label for="EKPO">ЗКПО</label>
+                <input type="text" id="EKPO">
+              </div>
+              <div >
+                <label for="Type-of-taxation">Тип оподаткування</label>
+                <input type="text" id="Type of taxation">
               </div>
             </form>
             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
-              <div>
-                <label for="number-of-telefon" style="display: block;" >Номер телефону </label>
-                <input type="text" id="number-of-telefon">
+              <div id="individual">
+                <label for="name-of-bank" style="display: block;" >Найменування банку</label>
+                <input type="text" id="name-of-bank">
               </div>
-                <div >
-                <label for="posst-index">Поштовий індекс</label>
-                <input type="text" id="posst-index">
+              <div>
+                <label for="MFO-of-bank">МФО банку </label>
+                <input type="text" id="MFO-of-bank">
+              </div>
+                <div style="margin-left: 280px;">
+                <label for="INN">ІНН</label>
+                <input type="text" id="INN">
+              </div>
+              <div >
+                <label for="System-of-taxation">Система оподаткування</label>
+                <input type="text" id="System-of-taxation">
+              </div>
+            </form>
+             <form action="" class="form-for-modal-window" style="display: flex; padding-left: 8%;">
+              <div>
+                <label for="Current-account" style="display: block;" >Розрахунковий рахунок</label>
+                <input type="text" id="Current-account">
+              </div>
+               <div style="margin-left: 280px;">
+                <label for="Phone-bookkeeping">Телефон бухгалтерії</label>
+                <input type="text" id="Phone-bookkeeping">
+              </div>
+              <div >
+                <label for="Fax">Факс</label>
+                <input type="text" id="Fax">
               </div>
             </form>
         </div>
@@ -342,25 +409,58 @@
           <div class="card">
             <div>
             <form action="" id="card">
+              <style>
+                #card input{
+                text-align: center;
+                }
+              </style>
+              <script>
+$(function() {
+  //задание заполнителя с помощью параметра placeholder
+  $(".number-of-card").mask("9999",  {placeholder: " " });
+  //задание заполнителя с помощью параметра placeholder
+});
+</script>
               <label for="number-of-card">Номер карти</label>
               <br>
-              <input type="text"maxlength="4" name="number-of-card" id="number-of-card">
-              <input type="text"maxlength="4">
-              <input type="text"maxlength="4">
-              <input type="text"maxlength="4">
+              <input type="text"maxlength="4" name="number-of-card" id="number-of-card" class="number-of-card">
+              <input type="text"maxlength="4"class="number-of-card">
+              <input type="text"maxlength="4" class="number-of-card">
+              <input type="text"maxlength="4" class="number-of-card">
             </form>
             </div>
-            <div >
+            <div>
+              <style>
+                #cvc-date input{
+                text-align: center;
+                }
+              </style>
             <form action="" id="cvc-date" style="display: grid; grid-template-columns: 50% 50%; margin-top: 10%;  justify-content: space-around;"  >
               <div>
               <label for="time">Термін дії</label>
               <br>
-              <input type="date" id="time" style="margin-right: 7em; ">
+              <script>
+$(function() {
+  //задание заполнителя с помощью параметра placeholder
+  $("#time").mask("99/99", {placeholder: "Mo/Year" });
+  //задание заполнителя с помощью параметра placeholder
+
+});
+
+</script>
+              <input type="text" id="time" style="margin-right: 7em; ">
               </div>    
               <div>
               <label for="cvc">CVC/CVV</label>
               <br>
-              <input type="password" id="cvc" maxlength="3">
+              <script>
+$(function() {
+  //задание заполнителя с помощью параметра placeholder
+  $("#cvc").mask("999",  {placeholder: " " });
+  //задание заполнителя с помощью параметра placeholder
+});
+</script>
+              <input type="password" id="cvc" >
               </div>
             </form>
           </div>
