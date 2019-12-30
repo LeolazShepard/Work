@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { Post1Component } from './post1/post1.component';
+import { PostFornComponent } from './post-forn/post-forn.component';
+import { FormComponent } from './form/form.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    Post1Component
+    PostFornComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

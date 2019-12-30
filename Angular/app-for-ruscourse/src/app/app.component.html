@@ -1,55 +1,78 @@
-<h1>Hello Angular</h1>
-<app-post1></app-post1>
-<!-- <button (click)="bckgroundTogle=!bckgroundTogle">Toggle</button> -->
-<!-- <div [ngStyle]="{
-width:'200px',
-height:'200px',
-borderRadius:'5px',
-border:'1px solid #484444',
-marginTop:'20px',
-background: bckgroundTogle ?  'red': 'blue'
-}">
-</div> -->
-<button (click)="color='Red'">Red</button>
-<button (click)="color='Green'">Green</button>
-<button (click)="color='Blue'">Blue</button>
-<div class="blockForColor" [ngClass]="{
-red:color==='Red',
-green:color==='Green',
-blue:color==='Blue'
-}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus!</div>
-<div>
-<button (click)="show=true">Show first div</button>
-<button (click)="show=false">Show second div</button>
-</div>
-<div *ngIf="show; else secondBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo nesciunt inventore quasi, alias voluptates impedit dolor vel harum, necessitatibus!</div>
-<ng-template #secondBlock>
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque eaque magni rerum pariatur doloribus placeat quia nostrum saepe quae, quisquam, natus consequuntur nisi consequatur, soluta neque quam suscipit aliquid.</div>
-</ng-template>
-<div [ngSwitch]="show">
-	<p *ngSwitchCase="true">Lorem.</p>
-	<p *ngSwitchCase="false">Lorem ipsum.</p>
+<h1>Hello Angular Components</h1>
+<app-post-forn
+(onAdd)="updatePosts($event)"
+></app-post-forn>
+<hr>
+<app-form
+  *ngFor="let p of posts"
+    [post]="p"
+    (removePost)="onRemove($event)"
+>
+<div #info>
+    <small *ngIf="p.text.length>10; else short">Пост довгий</small>
+    <ng-template #short>
+      <small>Пост короткий</small>
+    </ng-template> 
 </div>
 
 
-<div>
-	<ul>
-		<li *ngFor="let number of arr; let idx = index">
-			{{idx+1}} <strong>{{number}}</strong>
-		</li>
-	</ul>
 
-	<ul style="list-style: none">
-  <li *ngFor="let post of objs">
-    <p>{{post.title}} <b>{{post.author}}</b></p>
-    <ul>
-      <li *ngFor="let comment of post.comments">
-        <div>
-          <small>{{comment.name}}</small>
-          <p>{{comment.text}}</p>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
-</div>
+
+
+
+<!-- 
+                <button (click)="color='Red'">Red</button>
+                <button (click)="color='Green'">Green</button>
+                <button (click)="color='Blue'">Blue</button>
+                <div class="blockForColor" [ngClass]="{
+                red:color==='Red',
+                green:color==='Green',
+                blue:color==='Blue'
+                }">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus!</div>
+                <div>
+                <button (click)="show=true">Show first div</button>
+                <button (click)="show=false">Show second div</button>
+                </div>
+                <div *ngIf="show; else secondBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo nesciunt inventore quasi, alias voluptates impedit dolor vel harum, necessitatibus!</div>
+                <ng-template #secondBlock>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque eaque magni rerum pariatur doloribus placeat quia nostrum saepe quae, quisquam, natus consequuntur nisi consequatur, soluta neque quam suscipit aliquid.</div>
+                </ng-template>
+                <div [ngSwitch]="show">
+                	<p *ngSwitchCase="true">Lorem.</p>
+                	<p *ngSwitchCase="false">Lorem ipsum.</p>
+                </div>
+                <div>
+                	<ul>
+                		<li *ngFor="let number of arr; let idx = index">
+                			{{idx+1}} <strong>{{number}}</strong>
+                		</li>
+                	</ul>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  {{now}}
+ -->
+
+
+
+
+
+
+
+
+
+	<!-- <ul style="list-style: none">
+          <li *ngFor="let post of objs">
+                <p>{{post.title}} <b>{{post.author}}</b></p>
+                  <ul>
+                      <li *ngFor="let comment of post.comments">
+                        <div>
+                            <small>{{comment.name}}</small>
+                            <p>{{comment.text}}</p>
+                        </div>
+                      </li>
+                  </ul>
+          </li>
+</ul> -->
+<!-- </div> -->
