@@ -1,0 +1,15 @@
+<!-- <div class="container">
+	<label>Enter your name:</label>
+	<input type="text" class="form-control" [(ngModel)]="userName">
+	<p>User name is  -_- {{userName}}</p>
+	<button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">Button</button>
+</div> -->
+<div class="container">
+<button class="btn btn-primary" (click)="showParagraph()">Display details</button>
+<p *ngIf="toggle">Lorem ipsum dolor sit amet.</p>
+<div *ngFor="let logItem of log "
+[ngStyle]="{backgroundColor: logItem >=5 ? 'blue' : 'transparent'}"
+[ngClass]="{'text-white': logItem >=5}">
+	{{logItem}}
+</div>
+</div>

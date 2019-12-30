@@ -1,0 +1,24 @@
+
+html{
+	height: 100%;
+	width: 100%;
+	padding:0px;
+	margin: 0px;
+	font-family: Lato, sans-serif;
+}
+body{
+	padding: 0px;
+	color: #CDCEE0;
+	background: linear-gradient(155deg,#1D1E2B, #53545B);
+}
+
+input{
+	background-color: #C6ADAD;
+	border:0px;
+	border-radius: 7px;
+	padding:5px;
+	font-size: 1.2em;
+	color: #0D0D21;
+	outline: none;
+	text-align: center;
+}

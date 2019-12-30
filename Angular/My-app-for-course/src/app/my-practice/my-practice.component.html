@@ -1,0 +1,8 @@
+<h1>Hello, my name is Yura!</h1>
+<p>Input your name:</p>
+<label>Name</label>
+<input type="text" class="form-control" (input)="saveName($event)">
+<button class="btn btn-piymary" (click)="toogleBlockForShowName()">Save</button> 
+<div *ngIf="toggle">
+	<p>Your name is: {{userName}}</p>
+</div>
