@@ -1,23 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PostFornComponent } from './post-forn/post-forn.component';
-import { FormComponent } from './form/form.component';
+import { AppCounterService } from './Sirvices/app-counter.service';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PostFornComponent,
-    FormComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+  AppCounterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
